@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">BLW</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="documents.html">Documents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="interviews.html">Inerviews</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/s1.jpg" class="d-block w-100" height="450" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/s2.jpg" class="d-block w-100" height="450" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/s3.jpg" class="d-block w-100" height="450" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- end slider -->
+    </header>
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-4">
+                <h3>Direct Contact</h3>
+                <p>Name: John Doe</p>
+                <p>Email: john.doe@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="col-4">
+                <h3>Contuct Us</h3>
+                <form id="form" class="row g-3 needs-validation" novalidate>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
+                    <input type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
+                    <input type="tel" class="form-control" id="validationCustom01" placeholder="phone" required>
+
+                    <textarea name="" id=""></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <script>
+                    form.addEventListener('submit', event => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        form.classList.add('was-validated')
+                        } else alert('thanks submitted');
+
+                      
+                    }, false)
+                </script>
+
+            </div>
+            <div class="col-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57903.025849391044!2d91.81975002419517!3d24.900058323523872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1783128804315!5m2!1sen!2sbd" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <div class="text-bg-secondary p-3 text-center">&copy; 2023 Your Company. All rights reserved.</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
